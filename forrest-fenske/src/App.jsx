@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import logo from '../public/logo.png'
+import portrait from '../public/portrait.jpg'
 import './App.css'
 
 function App() {
@@ -8,15 +10,16 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+      <h1 className='main-header'>WORM TOMB</h1>
+      <div className='card'>
+        <a href="https://fineartamerica.com/profiles/forrest-fenske" target='_blank'>
+          <img src={logo} className='logo' alt='Logo' />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h2 className='main-header'>Recycled Art & Tool</h2>
+      <img src={portrait} className='portrait'></img>
+      {/*
+      <button>hello</button>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
@@ -28,6 +31,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+       */}
     </>
   )
 }

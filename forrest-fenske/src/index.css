@@ -31,8 +31,27 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  color: #000000;
+  font-size: 5em;
   line-height: 1.1;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+h2 {
+  color: #000000; 
+  font-size: 3em;
+  line-height: 1.1;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+h1:hover {
+  filter: drop-shadow(0 0 3em #4102C0);
+}
+
+h2:hover {
+  filter: drop-shadow(0 0 3em #4102C0);
 }
 
 button {
