@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import logo from './assets/logo.png'
-import portrait from './assets/portrait.jpg'
 import './App.css'
 import header from './assets/header.png'
 import headerText from './assets/worm-tomb-header-text.png'
 import tradeText from './assets/trade-text.png'
 import tradeTextBanner from './assets/trade-text-banner.png'
+import portrait from './assets/forrest-dragon-portrait.png'
+import Spacer from "./Spacer.jsx";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,13 +22,11 @@ function App() {
                 <img src={tradeText} alt='Recycled Art and Tool' className='trade-text'/>
           </div>
 
-          <div className='card'>
-              <a href="https://fineartamerica.com/profiles/forrest-fenske" target='_blank'>
-                  <img src={logo} className='logo' alt='Logo'/>
-              </a>
+          <div className='image-container'>
+            <img src={portrait} className='portrait' alt='Forrest Fenske & Dragon'></img>
           </div>
-          <img src={portrait} className='portrait' alt='portrait'></img>
-          {/*
+          <Spacer space={'2rem'}/>
+              {/*
           <button>hello</button>
           <div className="card">
             <button onClick={() => setCount((count) => count + 1)}>
