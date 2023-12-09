@@ -4,26 +4,30 @@ import portrait from './assets/portrait.jpg'
 import './App.css'
 import header from './assets/header.png'
 import headerText from './assets/worm-tomb-header-text.png'
+import tradeText from './assets/trade-text.png'
+import tradeTextBanner from './assets/trade-text-banner.png'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-        <div className='image-container'>
-            <img src={header} alt='Skull with Worm Tomb Logo' className='header-image'/>
-            <img src={headerText} alt='WORM TOMB' className='header-text'/>
-        </div>
+      <>
+          <div className='image-container'>
+              <img src={header} alt='Skull with Worm Tomb Logo' className='header-image'/>
+              <img src={headerText} alt='WORM TOMB' className='header-text'/>
+          </div>
+          <div className='image-container'>
+              <img src={tradeTextBanner} alt='Medieval Banner' className='trade-text-banner'/>
+                <img src={tradeText} alt='Recycled Art and Tool' className='trade-text'/>
+          </div>
 
-        <h1 className='main-header'>WORM TOMB</h1>
-        <div className='card'>
-            <a href="https://fineartamerica.com/profiles/forrest-fenske" target='_blank'>
-                <img src={logo} className='logo' alt='Logo' />
-            </a>
-        </div>
-        <h2 className='main-header'>Recycled Art & Tool</h2>
-        <img src={portrait} className='portrait' alt='portrait'></img>
-        {/*
+          <div className='card'>
+              <a href="https://fineartamerica.com/profiles/forrest-fenske" target='_blank'>
+                  <img src={logo} className='logo' alt='Logo'/>
+              </a>
+          </div>
+          <img src={portrait} className='portrait' alt='portrait'></img>
+          {/*
           <button>hello</button>
           <div className="card">
             <button onClick={() => setCount((count) => count + 1)}>
@@ -37,7 +41,7 @@ function App() {
             Click on the Vite and React logos to learn more
           </p>
            */}
-    </>
+      </>
   )
 }
 

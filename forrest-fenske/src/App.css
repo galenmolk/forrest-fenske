@@ -12,6 +12,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 .logo {
@@ -51,12 +52,6 @@ body {
   border-style: solid;
 }
 
-/*
-.read-the-docs {
-  color: #888;
-}
-*/
-
 .image-container {
   display: flex;
   justify-content: center;
@@ -72,6 +67,15 @@ body {
 
 .header-text {
   top: 0;
+  max-width: 100%;
+  position: absolute;
+}
+
+.trade-text-banner {
+  max-width: 100%;
+}
+
+.trade-text {
   max-width: 100%;
   position: absolute;
 }
