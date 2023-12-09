@@ -1,45 +1,18 @@
-import { useState } from 'react'
-import logo from './assets/logo.png'
 import './App.css'
-import header from './assets/header.png'
-import headerText from './assets/worm-tomb-header-text.png'
-import tradeText from './assets/trade-text.png'
-import tradeTextBanner from './assets/trade-text-banner.png'
-import portrait from './assets/forrest-dragon-portrait.png'
+import header from './assets/img/header.png'
+import portrait from './assets/img/forrest-dragon-portrait.png'
 import Spacer from "./Spacer.jsx";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
       <>
-          <div className='image-container'>
-              <img src={header} alt='Skull with Worm Tomb Logo' className='header-image'/>
-              <img src={headerText} alt='WORM TOMB' className='header-text'/>
-          </div>
-          <div className='image-container'>
-              <img src={tradeTextBanner} alt='Medieval Banner' className='trade-text-banner'/>
-                <img src={tradeText} alt='Recycled Art and Tool' className='trade-text'/>
-          </div>
-
-          <div className='image-container'>
-            <img src={portrait} className='portrait' alt='Forrest Fenske & Dragon'></img>
+          <img src={header} alt='Womb Tomb – Recycled Art & Tool' className='header'/>
+          <div className='about-artist'>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <img src={portrait} className='portrait' alt='Forrest Fenske, Artist. Metal Dragon Sculpture.'></img>
+              </p>
           </div>
           <Spacer space={'2rem'}/>
-              {/*
-          <button>hello</button>
-          <div className="card">
-            <button onClick={() => setCount((count) => count + 1)}>
-              count is {count}
-            </button>
-            <p>
-              Edit <code>src/App.jsx</code> and save to test HMR
-            </p>
-          </div>
-          <p className="read-the-docs">
-            Click on the Vite and React logos to learn more
-          </p>
-           */}
       </>
   )
 }
