@@ -1,9 +1,11 @@
+/*
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
+*/
 
 body {
   background-color: #217D31;
@@ -46,6 +48,13 @@ body {
   border-style: solid;
 }
 
+/*
 .read-the-docs {
   color: #888;
+}
+*/
+
+.header-image {
+  width: 100%;
+  object-fit: cover;
 }
