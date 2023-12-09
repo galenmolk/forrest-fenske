@@ -1,17 +1,20 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import logo from '../public/logo.png'
-import portrait from '../public/portrait.jpg'
+import logo from './assets/logo.png'
+import portrait from './assets/portrait.jpg'
 import './App.css'
 import header from './assets/header.png'
+import headerText from './assets/worm-tomb-header-text.png'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-        <img src={header} alt='header' className='header-image'/>
+        <div className='image-container'>
+            <img src={header} alt='Skull with Worm Tomb Logo' className='header-image'/>
+            <img src={headerText} alt='WORM TOMB' className='header-text'/>
+        </div>
+
         <h1 className='main-header'>WORM TOMB</h1>
         <div className='card'>
             <a href="https://fineartamerica.com/profiles/forrest-fenske" target='_blank'>
