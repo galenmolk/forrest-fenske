@@ -1,4 +1,4 @@
-import buttonBanner from './assets/img/button-banner.png'
+import buttonBanner from './assets/img/button-banner.webp'
 
 export default function PageCard({title, img, width, url}) {
     return (
