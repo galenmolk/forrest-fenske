@@ -4,7 +4,7 @@ import portrait from './assets/img/forrest-dragon-portrait.webp'
 import Spacer from "./Spacer.jsx";
 import siteData from './assets/site-data.json'
 import PageCard from './PageCard.jsx'
-import drawingThumbnail from './assets/img/drawing-thumbnail.jpg'
+import drawingThumbnail from './assets/img/drawing-thumbnail.webp'
 import sculptureThumbnail from './assets/img/sculpture-thumbnail.webp'
 import filmThumbnail from './assets/img/film-thumbnail.webp'
 import musicThumbnail from './assets/img/music-thumbnail.webp'
@@ -27,7 +27,7 @@ function App() {
                 <PageCard title='Film' img={filmThumbnail} width={'137%'} url='https://www.youtube.com/@wormtomb4168'/>
                 <PageCard title='Music' img={musicThumbnail} width={'136%'} url='https://wormtomb.bandcamp.com/'/>
             </div>  
-            <Spacer space={'2rem'}/>
+            <Spacer space={'4rem'}/>
         </>
     )
 }
