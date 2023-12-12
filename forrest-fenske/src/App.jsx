@@ -4,6 +4,10 @@ import portrait from './assets/img/forrest-dragon-portrait.png'
 import Spacer from "./Spacer.jsx";
 import siteData from './assets/site-data.json'
 import PageCard from './PageCard.jsx'
+import drawingThumbnail from './assets/img/drawing-thumbnail.png'
+import sculptureThumbnail from './assets/img/sculpture-thumbnail.jpg'
+import filmThumbnail from './assets/img/film-thumbnail.png'
+import musicThumbnail from './assets/img/music-thumbnail.png'
 
 function App() {
     return (
@@ -18,10 +22,10 @@ function App() {
                 </span>
             </div>
             <div className='pages'>
-                <PageCard title='Sculpture'/>
-                <PageCard title='Drawing'/>
-                <PageCard title='Film'/>
-                <PageCard title='Music'/>
+                <PageCard title='Sculpture' img={sculptureThumbnail} width='114%' url='https://www.instagram.com/worm_tomb/'/>
+                <PageCard title='Drawing' img={drawingThumbnail} url='https://www.patreon.com/WormTomb'/>
+                <PageCard title='Film' img={filmThumbnail} width={'137%'} url='https://www.youtube.com/@wormtomb4168'/>
+                <PageCard title='Music' img={musicThumbnail} width={'136%'} url='https://wormtomb.bandcamp.com/'/>
             </div>  
             <Spacer space={'2rem'}/>
         </>
