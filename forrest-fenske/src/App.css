@@ -40,7 +40,7 @@ body {
   border-width: .2rem;
   border-color: black;
   border-style: solid;
-  max-width: 300px;
+  height: 216px;
 }
 
 a {
