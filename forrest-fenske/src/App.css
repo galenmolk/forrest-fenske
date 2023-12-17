@@ -5,20 +5,35 @@ body {
   margin: auto;
   max-width: 900px;
   padding: 0;
-  font-family: 'Bodoni 72 Oldstyle', serif;
+  font-family: 'Merriweather', serif;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  font-weight: 400;
+  font-style: normal;
+  src: url('./assets/fonts/Merriweather-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  font-weight: 400;
+  font-style: oblique;
+  src: url('./assets/fonts/Merriweather-Bold.ttf') format('truetype');
 }
 
 .about-artist {
   display: flex;
   justify-content: space-between;
   margin: 2rem 5rem 4rem 5rem;
-  
 }
 
 .about-artist p {
   text-align: left;
   margin-top: 0;
   max-width: 90%;
+  letter-spacing: .015rem;
+  line-height: 1.5rem;
 }
 
 .about-artist img {
@@ -28,8 +43,19 @@ body {
   max-width: 300px;
 }
 
-span {
-  
+a {
+  color: #083db7;
+  font-style: oblique;
+  letter-spacing: .08rem;
+  font-size: 17px;
+}
+
+a:visited {
+  color: #083db7;
+}
+
+a:hover {
+  color: #b3c9ff;
 }
 
 .header {
@@ -69,6 +95,7 @@ span {
   font-size: 22px;
   font-weight: bold;
   letter-spacing: 1px;
+  text-decoration: underline;
   position: absolute;
   top: 11%;
   left: 50%;
