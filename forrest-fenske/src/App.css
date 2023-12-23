@@ -3,9 +3,30 @@ body {
   display: flex;
   text-align: center;
   margin: auto;
-  max-width: 900px;
   padding: 0;
   font-family: 'Merriweather', serif;
+  max-width: 900px;
+}
+
+.header {
+  margin: auto;
+  top: 0;
+  max-width: 100%
+}
+
+.border {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  pointer-events: none;
+  max-width: 900px;
+}
+
+@media screen and (max-width: 915px) {
+  .border {
+    display: none;
+  }
 }
 
 @font-face {
@@ -23,15 +44,12 @@ body {
 }
 
 .about-artist {
-  display: flex;
-  justify-content: space-between;
-  margin: 2rem 5rem 4rem 5rem;
+  margin: -2rem auto 0 auto;
+  width: 65%;
 }
 
 .about-artist p {
-  text-align: left;
-  margin-top: 0;
-  max-width: 90%;
+  text-align: center;
   letter-spacing: .015rem;
   line-height: 1.5rem;
 }
@@ -40,14 +58,13 @@ body {
   border-width: .2rem;
   border-color: black;
   border-style: solid;
-  height: 216px;
+  height: 15rem;
 }
 
 a {
-  color: #083db7;
+  color: #b3c9ff;
   font-style: oblique;
-  letter-spacing: .08rem;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 a:visited {
@@ -55,32 +72,22 @@ a:visited {
 }
 
 a:hover {
-  color: #b3c9ff;
-}
-
-.header {
-  width: 100%;
-}
-
-@media screen and (max-width: 893px) {
-  .about-artist {
-    display: block;
-  }
-
-  .about-artist p {
-    margin: auto auto 1rem;
-    max-width: 80%;
-  }
+  color: #083db7;
 }
 
 .pages {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 400px));
-  margin: 2rem;
-  row-gap: 2.5rem;
-  column-gap: 1rem;
+  grid-template-columns: repeat(2, 300px);
+  row-gap: 8rem;
+  column-gap: 0rem;
   justify-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+  .pages {
+    grid-template-columns: repeat(1, 300px);
+  }
 }
 
 .page-card {
@@ -89,6 +96,7 @@ a:hover {
   justify-items: center;
   position: relative;
   text-decoration: none;
+  box-shadow: 0 2.5rem 2rem 1.5rem rgb(0,0,0,0.5);
 }
 
 .page-card:hover {
@@ -97,22 +105,30 @@ a:hover {
   }
 }
 
+.page-banner {
+  z-index: 1;
+  width: 225px;
+}
+
 .page-card p {
+  z-index: 1;
   color: #16160a;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: bold;
   letter-spacing: 1px;
   position: absolute;
-  top: 11%;
+  top: 36%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
 }
 
 .page-card-thumbnail-mask {
-  height: 300px;
+  height: 150px;
+  width: 250px;
   border: .15rem solid black;
   overflow: hidden;
+  position: absolute;
 }
 
 .page-card-thumbnail {
