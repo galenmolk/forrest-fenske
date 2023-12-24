@@ -11,7 +11,7 @@ body {
 .header {
   margin: auto;
   top: 0;
-  max-width: 100%
+  max-width: 100%;
 }
 
 .border {
@@ -21,12 +21,7 @@ body {
   transform: translate(-50%, 0%);
   pointer-events: none;
   max-width: 900px;
-}
-
-@media screen and (max-width: 915px) {
-  .border {
-    display: none;
-  }
+  box-shadow: 0 0 15px 15px rgba(23, 47, 7, 0.75);
 }
 
 @font-face {
@@ -43,63 +38,92 @@ body {
   src: url('./assets/fonts/Merriweather-Bold.ttf') format('truetype');
 }
 
-.about-artist {
-  margin: -2rem auto 0 auto;
-  width: 65%;
-}
-
-.about-artist p {
-  text-align: center;
+.bio {
+  color: #0c030b;
   letter-spacing: .015rem;
-  line-height: 1.5rem;
+  font-style: oblique;
+  line-height: 1.6;
+  max-width: 525px;
+  width: 80%;
+  margin: auto;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-.about-artist img {
+.artist-img {
   border-width: .2rem;
   border-color: black;
   border-style: solid;
-  height: 15rem;
+  height: 13rem;
+  box-shadow: 0 0 1.5rem rgb(0,0,0,0.7);
+  margin-top: -1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 0.35rem;
+  transition: 0.4s ease-in-out;
+}
+
+.artist-img:hover {
+  scale: 101%;
+}
+
+.link-box {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 0.35rem;
+  padding: 0.7rem;
+  width: 310px;
+  margin: 0 auto 0 auto;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.25);
+  transition: 0.2s ease-in-out;
+}
+
+.link-box:hover {
+  border-color: lightblue;
 }
 
 a {
-  color: #b3c9ff;
+  color: lightblue;
   font-style: oblique;
   font-size: 16px;
+  text-shadow: none;
+  letter-spacing: 0.09rem;
 }
 
 a:visited {
-  color: #083db7;
+  color: lightblue;
 }
 
 a:hover {
-  color: #083db7;
+  color: whitesmoke;
 }
 
 .pages {
   display: grid;
   grid-template-columns: repeat(2, 300px);
-  row-gap: 8rem;
-  column-gap: 0rem;
+  row-gap: 7rem;
+  column-gap: 0;
   justify-items: center;
   justify-content: center;
-}
-
-@media screen and (max-width: 700px) {
-  .pages {
-    grid-template-columns: repeat(1, 300px);
-  }
+  margin-bottom: 6.5rem;
+  margin-top: 2rem;
 }
 
 .page-card {
   display: grid;
-  place-items: start;
   justify-items: center;
   position: relative;
-  text-decoration: none;
-  box-shadow: 0 2.5rem 2rem 1.5rem rgb(0,0,0,0.5);
+  box-shadow: 0 2.2rem 1.5rem 1.5rem rgb(0,0,0,0.3);
+  transition: box-shadow 0.2s ease-in-out;
 }
 
 .page-card:hover {
+  box-shadow: 0 2.5rem .8rem .8rem rgb(10, 19, 28, 0.3);
+  .page-banner {
+    scale: 103%;
+  }
   p {
     text-decoration: underline;
   }
@@ -108,19 +132,22 @@ a:hover {
 .page-banner {
   z-index: 1;
   width: 225px;
+  margin: 0;
+  transition: 0.4s ease-in-out;
 }
 
 .page-card p {
   z-index: 1;
   color: #16160a;
   font-size: 18px;
-  font-weight: bold;
   letter-spacing: 1px;
   position: absolute;
   top: 36%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
+  transition: 0.4s ease-in-out;
+  text-shadow: 1px 1px 1px rgba(85, 85, 207, 0.4);
 }
 
 .page-card-thumbnail-mask {
@@ -129,8 +156,26 @@ a:hover {
   border: .15rem solid black;
   overflow: hidden;
   position: absolute;
+  border-radius: 0.35rem;
 }
 
 .page-card-thumbnail {
+  position: absolute;
   height: auto;
+}
+
+@media screen and (max-width: 915px) {
+  .border {
+    display: none;
+  }
+
+  .artist-img {
+    margin-top: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .pages {
+    grid-template-columns: repeat(1, 300px);
+  }
 }
