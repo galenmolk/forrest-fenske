@@ -1,5 +1,9 @@
-body {
+#root {
   background-color: #217D31;
+}
+
+body {
+  background-color: black;
   display: flex;
   text-align: center;
   margin: auto;
@@ -15,6 +19,7 @@ body {
 }
 
 .border {
+  z-index: 0;
   position: absolute;
   top: 0;
   left: 50%;
@@ -107,7 +112,7 @@ a:hover {
   column-gap: 0;
   justify-items: center;
   justify-content: center;
-  margin-bottom: 6.5rem;
+  margin-bottom: 12rem;
   margin-top: 2rem;
 }
 
@@ -177,5 +182,6 @@ a:hover {
 @media screen and (max-width: 700px) {
   .pages {
     grid-template-columns: repeat(1, 300px);
+    margin-bottom: 7rem;
   }
 }
