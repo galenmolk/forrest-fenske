@@ -1,4 +1,3 @@
-import '../App.css'
 import portrait from '../assets/img/forrest-dragon-portrait.webp'
 import PageCard from '../PageCard.jsx'
 import drawingThumbnail from '../assets/img/drawing-thumbnail.webp'
