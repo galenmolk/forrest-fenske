@@ -1,9 +1,9 @@
-import ImageGallery from "react-image-gallery";
+import './gallery.css'
 
 const Gallery = ({images}) => {
     return (
         <>
-            <ImageGallery items={images}/>
+            <img className='main-display' src={images[0].original}></img>
         </>
     )
 };
