@@ -1,10 +1,10 @@
 import buttonBanner from './assets/img/button-banner.webp'
 import { Link } from 'react-router-dom'
 
-export default function PageCard({title, target, img, width, url, margin, top, left}) {
+export default function PageCard({title, className, target, img, width, url, margin, top, left}) {
     return (
         <Link to={url} target={target || null}>
-            <div className='page-card'>
+            <div className={className}>
                 <div className='page-card-thumbnail-mask'>
                     <img className='page-card-thumbnail'
                          src={img}
@@ -16,7 +16,7 @@ export default function PageCard({title, target, img, width, url, margin, top, l
                          }}/>
                 </div>
                 <img className='page-banner' src={buttonBanner} alt='Button Background Banner'/>
-                <p>{title}</p>
+                <p className="page-card-text">{title}</p>
             </div>
         </Link>
     );

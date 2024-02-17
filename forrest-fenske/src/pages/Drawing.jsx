@@ -1,12 +1,17 @@
 import Header from "../Header";
 import NavBar from "../NavBar";
+import Gallery from "../gallery/Gallery.jsx";
+import {homePage} from "./Directory.js";
 
 const Drawing = () => {
  return (
     <>
         <Header/>
-        <NavBar/>
-        <h1>Drawing</h1>
+        <NavBar pages={[
+            homePage
+        ]}/>
+        <p className='title'>Drawing</p>
+        <Gallery/>
     </>
  )
 };
