@@ -1,5 +1,6 @@
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css"
+import "./gallery.css"
 
 const fallbackImages = [
     {
@@ -18,9 +19,9 @@ const fallbackImages = [
 
 const Gallery = ({images}) => {
     return (
-        <>
+        <div className={'gallery'}>
             <ImageGallery  items={images || fallbackImages}/>
-        </>
+        </div>
     )
 };
 

@@ -5,11 +5,10 @@ import sculptureThumbnail from '../assets/img/sculpture-thumbnail.webp'
 import musicThumbnail from '../assets/img/music-thumbnail.webp'
 import ocd from '../assets/img/ocd.webp'
 import Header from '../Header.jsx'
-import Spacer from "../Spacer.jsx";
+import Footer from "../Footer.jsx";
+import {email} from "../Email.js";
 
 function App() {
-    const email = 'wormtombcontact@gmail.com';
-    
     return (
         <>
             <Header showBorder={true}/>
@@ -32,7 +31,7 @@ function App() {
                 <PageCard title='Film' className={'page-card'}  target={'_blank'} img={ocd} width={'165%'} url='https://www.youtube.com/@wormtomb4168' top={'-1%'} left={'-21%'}/>
                 <PageCard title='Music' className={'page-card'}  target={'_blank'} img={musicThumbnail} width={'150%'} url='https://wormtomb.bandcamp.com/' top={'-40%'} left={'-20%'}/>
         </div>
-            <Spacer space={'12rem'}></Spacer>
+            <Footer/>
         </>
     )
 }

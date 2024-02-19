@@ -115,6 +115,10 @@ a:hover {
   margin-top: 2rem;
 }
 
+.sculpture-pages {
+  grid-template-columns: repeat(1, 300px);
+}
+
 .page-card {
   display: grid;
   justify-items: center;
