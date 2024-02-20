@@ -31,7 +31,7 @@ function App() {
                 <PageCard title='Film' className={'page-card'}  target={'_blank'} img={ocd} width={'165%'} url='https://www.youtube.com/@wormtomb4168' top={'-1%'} left={'-21%'}/>
                 <PageCard title='Music' className={'page-card'}  target={'_blank'} img={musicThumbnail} width={'150%'} url='https://wormtomb.bandcamp.com/' top={'-40%'} left={'-20%'}/>
         </div>
-            <Footer/>
+            <Footer />
         </>
     )
 }

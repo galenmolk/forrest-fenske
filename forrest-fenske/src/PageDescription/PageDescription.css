@@ -1,4 +1,11 @@
 .page-description {
     margin: auto;
-    width: 550px;
+    max-width: 60%;
 }
+
+@media screen and (max-width: 915px) {
+    .page-description {
+        max-width: 90%;
+    }
+}
+

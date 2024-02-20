@@ -1,5 +1,5 @@
-export default function Spacer( { space } ) { 
+export default function Spacer( {className } ) { 
     return (
-        <div style={{marginTop: space || 0}}></div>
+        <div className={className}></div>
     )
 }

@@ -13,3 +13,10 @@
 .navbar div {
     padding: 0 10px;
 }
+
+@media screen and (max-width: 915px) {
+    .navbar {
+        margin: -10px auto auto;
+    }
+}
+

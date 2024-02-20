@@ -23,11 +23,11 @@ const Sculptures = () => {
                           top={'0%'} left={'-30%'}/>
                 <PageCard title='Lanterns' className={'page-card'} img={drawingThumbnail} url='/forrest-fenske/sculptures/lanterns/' width='250%'
                           top={'-105%'} left={'-65%'}/>
+                <PageCard title='More' className={'page-card'} img={drawingThumbnail} url='/forrest-fenske/sculptures/more/' width='250%'
+                          top={'-105%'} left={'-65%'}/>
             </div>
-            <Spacer space={'7rem'}></Spacer>
-            <PageCard title='More' className={'page-card'} img={drawingThumbnail} url='/forrest-fenske/sculptures/more/' width='250%'
-                      top={'-105%'} left={'-65%'}/>
-            <Footer/>
+
+            <Footer />
         </>
     )
 }

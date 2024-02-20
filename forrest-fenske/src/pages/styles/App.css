@@ -125,11 +125,11 @@ a:hover {
   position: relative;
 }
 
-
 .page-card:hover {
   .page-banner {
     scale: 103%;
   }
+  
   p {
     text-decoration: underline;
   }

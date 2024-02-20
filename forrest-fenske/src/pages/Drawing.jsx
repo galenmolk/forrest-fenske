@@ -3,6 +3,8 @@ import NavBar from "../NavBar";
 import Gallery from "../gallery/Gallery.jsx";
 import {homePage} from "./Directory.js";
 import Footer from "../Footer.jsx";
+import PageDescription from "../PageDescription/PageDescription.jsx";
+import {dummy} from "../Dummy.js";
 
 const Drawing = () => {
  return (
@@ -12,8 +14,9 @@ const Drawing = () => {
             homePage
         ]}/>
         <p className='title'>Drawing</p>
+        <PageDescription text={dummy}/>
         <Gallery/>
-        <Footer/>
+        <Footer spaceClass={'gallery-space'} footerClass={'gallery-footer'}/>
 
     </>
  )
