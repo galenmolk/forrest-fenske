@@ -36,6 +36,9 @@
 @media screen and (max-width: 915px) {
     .footer {
         margin: -150px auto auto;
+        background-color: rgba(0, 0, 0, 0.15);
+        padding: 5px;
+        border-radius: 10px;
     }
     
     .footer-space {
