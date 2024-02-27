@@ -20,7 +20,7 @@ const fallbackImages = [
 const Gallery = ({images}) => {
     return (
         <div className={'gallery'}>
-            <ImageGallery  items={images || fallbackImages}/>
+            <ImageGallery  items={images || fallbackImages} />
         </div>
     )
 };
