@@ -1,9 +1,9 @@
 import NavBar from "../NavBar";
 import Header from "../Header";
 import PageCard from "../PageCard.jsx";
-import sculptureThumbnail from "../assets/img/sculpture-thumbnail.webp";
-import drawingThumbnail from "../assets/img/drawing-thumbnail.webp";
-import Spacer from "../Spacer.jsx";
+import sculptureThumbnail from "../assets/img/dragon.jpg";
+import lanternThumbnail from "../assets/img/lantern.jpg"
+import moreThumbnail from "../assets/img/treasure.jpeg"
 import {homePage } from './Directory.js'
 import Footer from "../Footer.jsx";
 import {dummy} from "../Dummy.js";
@@ -19,12 +19,12 @@ const Sculptures = () => {
             <p className='title'>Sculptures</p>
             <PageDescription text={dummy}/>
             <div className='pages sculpture-pages'>
-                <PageCard title='Dragons' className={'page-card'} img={sculptureThumbnail} width='320%' url='/forrest-fenske/sculptures/dragons/'
-                          top={'0%'} left={'-30%'}/>
-                <PageCard title='Lanterns' className={'page-card'} img={drawingThumbnail} url='/forrest-fenske/sculptures/lanterns/' width='250%'
-                          top={'-105%'} left={'-65%'}/>
-                <PageCard title='More' className={'page-card'} img={drawingThumbnail} url='/forrest-fenske/sculptures/more/' width='250%'
-                          top={'-105%'} left={'-65%'}/>
+                <PageCard title='Dragons' className={'page-card'} img={sculptureThumbnail} width='120%' url='/forrest-fenske/sculptures/dragons/'
+                          top={'-20%'} left={'-10%'}/>
+                <PageCard title='Lanterns' className={'page-card'} img={lanternThumbnail} url='/forrest-fenske/sculptures/lanterns/' width='100%'
+                          top={''} left={''}/>
+                <PageCard title='More' className={'page-card'} img={moreThumbnail} url='/forrest-fenske/sculptures/more/' width='110%'
+                          top={''} left={''}/>
             </div>
 
             <Footer />
