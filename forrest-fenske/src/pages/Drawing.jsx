@@ -5,8 +5,17 @@ import {homePage} from "./Directory.js";
 import Footer from "../Footer.jsx";
 import PageDescription from "../PageDescription/PageDescription.jsx";
 import {dummy} from "../Dummy.js";
+import {useEffect, useState} from "react";
+import {getImages} from "../cloudinary/Cloudinary.js";
 
 const Drawing = () => {
+    const [drawings, setDrawings] = useState([]);
+
+    useEffect(() => {
+        getImages("https://res.cloudinary.com/cloudkeeper/image/list/drawing.json",
+            setDrawings)
+    }, []);
+    
  return (
     <>
         <Header/>
@@ -14,8 +23,7 @@ const Drawing = () => {
             homePage
         ]}/>
         <p className='title'>Drawing</p>
-        <PageDescription text={dummy}/>
-        <Gallery/>
+        <Gallery images={drawings}/>
         <Footer spaceClass={'gallery-space'} footerClass={'gallery-footer'}/>
 
     </>

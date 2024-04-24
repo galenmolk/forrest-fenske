@@ -23,11 +23,11 @@ const Sculptures = () => {
                           top={'-20%'} left={'-10%'}/>
                 <PageCard title='Lanterns' className={'page-card'} img={lanternThumbnail} url='/forrest-fenske/sculptures/lanterns/' width='100%'
                           top={''} left={''}/>
-                <PageCard title='More' className={'page-card'} img={moreThumbnail} url='/forrest-fenske/sculptures/more/' width='110%'
+                <PageCard title='More' className={'page-card'} img={"https://res.cloudinary.com/cloudkeeper/image/upload/v1713920879/WormTomb/Galleries/More/IMG_20240301_204605_01_c1trhs.jpg"} url='/forrest-fenske/sculptures/more/' width='110%'
                           top={''} left={''}/>
             </div>
 
-            <Footer />
+            <Footer spaceClass={'sculptures-space'}/>
         </>
     )
 }

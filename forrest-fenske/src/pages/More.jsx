@@ -5,8 +5,17 @@ import {homePage, sculpturesPage} from "./Directory.js";
 import Footer from "../Footer.jsx";
 import PageDescription from "../PageDescription/PageDescription.jsx";
 import {dummy} from "../Dummy.js";
+import {useEffect, useState} from "react";
+import {getImages} from "../cloudinary/Cloudinary.js";
 
 export default function More() {
+    const [more, setMore] = useState([]);
+
+    useEffect(() => {
+        getImages("https://res.cloudinary.com/cloudkeeper/image/list/more.json",
+            setMore)
+    }, []);
+    
   return (
       <>
           <Header/>
@@ -16,7 +25,7 @@ export default function More() {
           ]}/>
           <p className='title'>More</p>
           <PageDescription text={dummy}/>
-          <Gallery/>
+          <Gallery images={more}/>
           <Footer spaceClass={'gallery-space'} footerClass={'gallery-footer'}/>
       </>
   )
